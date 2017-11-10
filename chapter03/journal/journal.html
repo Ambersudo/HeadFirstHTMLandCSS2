@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Segway'n USA 我不改了</title>
 </head>
@@ -12,7 +13,7 @@
     <img src="images/segway1.jpg" alt="1">
     <p>
         Well I made it 1200 miles already, and I passed through some interesting places on the way:
-    </p>
+    </p><!-- p 标签不包含列表测试-->
     <ul>
         <li>Walla Walla, WA</li>
         <li>Magic City, ID</li>
@@ -25,25 +26,115 @@
     <h2>July 14, 2012</h2>
     <p>
         I saw some Burma Shave style signs on the side of the road today:
-        <q>Passing cars, When you can't see, May get you, A glimpse, Of eternity.</q>
+    </p>
+    <blockquote>
+        Passing cars,<br/>
+        When you can't see,<br/>
+        May get you,<br/>
+        A glimpse, <br/>
+        Of eternity.<br/>
+    </blockquote>
+    <p>
         I definitely won't be passing any cars.
     </p>
 
     <h2>June 2, 2012</h2>
     <img src="images/segway2.jpg" alt="2">
     <p>
-        My first day of the trip! I can't believe I finally got everything packed and ready to go. Because I'm on a Segway, I wasn't able to bring a whole lot with me:
-    <ul>
+        My first day of the trip! I can't believe I finally got everything packed and ready to go. Because I'm on a Segway, I wasn't able to bring a whole lot with me:<!-- p 标签包含列表测试-->
+    <ol>
         <li>cellphone</li>
         <li>iPod</li>
         <li>digital camera</li>
         <li>and a protein bar</li>
-    </ul>
+    </ol>
     Just the essentials. As Lao Tzu would have said,
     <q>
         A journey of a thousand miles begins with one Segway.
     </q>
     </p>
 
+    <!--
+    <p>测试01 '/li' 不包含子列表 </p>
+    <ol>
+        <li>cellphone</li>
+            <ol>
+                <li>cellphone</li>
+                <li>iPod</li>
+                <li>digital camera</li>
+                <li>and a protein bar</li>
+            </ol>
+        <li>iPod</li>
+        <li>digital camera</li>
+        <li>and a protein bar</li>
+    </ol>
+
+    <p>测试02  '/li' 包含子列表</p>
+    <ol>
+        <li>cellphone
+            <ul>
+                <li>cellphone</li>
+                <li>iPod</li>
+                <li>digital camera</li>
+                <li>and a protein bar</li>
+            </ul>
+        </li>
+        <li>iPod</li>
+        <li>digital camera</li>
+        <li>and a protein bar</li>
+    </ol>
+
+    <p>测试03</p>
+    <ul>
+        <li>cellphone</li>
+            <ol>
+                <li>cellphone</li>
+                <li>iPod</li>
+                <li>digital camera</li>
+                <li>and a protein bar</li>
+            </ol>
+        <li>iPod</li>
+        <li>digital camera</li>
+        <li>and a protein bar</li>
+    </ul>
+
+    <p>测试04</p>
+    <ul>
+        <li>cellphone
+            <ol>
+                <li>cellphone</li>
+                <li>iPod</li>
+                <li>digital camera</li>
+                <li>and a protein bar</li>
+            </ol>
+        </li>
+        <li>iPod</li>
+        <li>digital camera</li>
+        <li>and a protein bar</li>
+    </ul>
+    结果一致，估计是浏览器的容错能力太强
+
+    https://stackoverflow.com/questions/5899337/proper-way-to-make-html-nested-list
+
+    https://www.w3.org/wiki/HTML_lists
+
+    比较符合标准的是 子列表，需要包含在 <li></li>中间，例如：测试02、测试04
+
+    <p>测试05 dl </p>
+    <dl>
+        <dt>Name</dt>
+        <dd>Value that applies to the preceding name</dd>
+
+        <dt>Name</dt>
+
+        <dt>Name</dt>
+        <dd>Value that applies to both of the preceding name</dd>
+
+        <dt>Name that can have both of the following values</dt>
+        <dd>One value of the name</dd>
+        <dd>Another value of the name</dd>
+
+      </dl>
+    -->
 </body>
 </html>
