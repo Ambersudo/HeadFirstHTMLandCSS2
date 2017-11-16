@@ -1,0 +1,39 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: small;
+    line-height: 160%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1, h2 {
+    color: #007e7e
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+#guarantee {
+    border-color: white;
+    border-width: 1px;
+    border-style: dashed;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #a7cece;
+    padding: 25px;
+    padding-left: 80px;
+    margin: 30px;
+    margin-right: 250px;
+    line-height: 190%;
+    font-style: italic;
+    color: #444444;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}

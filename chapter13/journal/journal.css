@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "Emblema One";
+	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"),
+	     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");
+}
+
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       small;
+}
+
+h1, h2 {
+  color:           #cc6600;
+  border-bottom:   thin dotted #888888;
+}
+
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+
+h2 {
+  font-size:       130%;
+  font-weight:     normal;
+}
+
+blockquote {
+  font-style:      italic;
+}
+
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+/* table 设置的border-style 会被 td、th 设置的 border-style 所覆盖
+问题：如何不要外框线，只要内框线？ */
+td, th {
+    border: thin dotted gray;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(237, 200, 104);
+}
+
+
+tr:nth-child(2n) {
+    background-color: rgb(166, 223, 198);
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(239, 239, 239);
+}
+
+
+table table th {
+    background-color: rgb(255, 255, 255);
+
+}
+
+caption {
+    font-style: italic;
+    padding-top: 8px;
+}
+
+
+
+.col4, .col5 {
+    text-align: right;
+}
+
+.col2, .col3, .col6 {
+    text-align: center;
+}
+
+
+li {
+    list-style-image: url(images/backpack.gif);
+    padding-top: 5px;
+    margin-left: 80px;
+    list-style-position: inside;
+}

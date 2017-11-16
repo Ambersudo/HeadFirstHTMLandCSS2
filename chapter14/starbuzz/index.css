@@ -1,0 +1,56 @@
+body {
+	background: #efe5d0 url(images/background.gif) top left;
+	margin: 20px;
+}
+
+form {
+    display: table;
+    background-color: rgb(225, 206, 184);
+    /*margin: 20px;*/
+    padding: 20px;
+    border-style: dashed;
+    border-color: black;
+    border-width: thin;
+    /*width: auto;*/
+}
+
+
+.tableRow {
+    display: table-row;
+}
+
+/* html 结果有点混乱，label 属于2个级别的内容
+    测试更准确的选择器
+    .tableRow p, .tableRow label, .tableRow input
+    上面是原先的选择器，差别 在于 大于号 >
+    那么大于号代表着什么？
+
+    大于号是子元素选择器的意思
+    与后代选择器（空格）对比
+
+    子选择器选择其后一代的元素，即爸爸的儿子，孙子不选择
+    后代选择器，选择所有后代的元素，爸爸的儿子，儿子的18代孙子都会选中
+
+*/
+
+.tableRow > p, .tableRow > label, .tableRow > input, textarea{
+/*div.tableRow > p, div.tableRow > label, div.tableRow > input {*/
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+    margin: 1px;
+}
+
+.tableRow label:first-child {
+	text-align: right;
+}
+
+legend {
+    font-weight: bold;
+}
+
+form textarea {
+    display: table-cell;
+	width: 500px;
+	height: 200px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="starbuzz.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click 快上车 to order</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+        <fieldset>
+            <legend>Order details</legend>
+            <div class="tableRow">
+                <label for="beans">Choose your beans:</label>
+                    <select id="beans" name="beans">
+                        <option value="House Blend">House Blend</option>
+                        <option value="Shade Grown Bolivia Supermo">Shade Grown Bolivia Supermo</option>
+                        <option value="Organic Guatemala">Organic Guatemala</option>
+                        <option value="Kenya">Kenya</option>
+                    </select>
+            </div>
+
+<!--  这里比较混乱，
+        select 控件，在提示文字上 直接 label for
+        input radio 控件，提示文字上 只有 label
+        lebel for 用到了每个选项
+
+        就是说一个提示文字对应一个控件时，直接在提示文字上 label for
+        一个提示文字对应多个控件时，提示文字上 只有简单的label
+        每个控件 再一一对应一个label for
+        label for 对应的文字既是按钮选项的提示文字
+
+        使用label的时候 select 控件、input number 控件 等 相当于是单选控件、复选控件的的一个小的组成部分
+
+        label 是内联元素
+        更改表格的时候 是替代 p 标签  还是被 p 标签包围？
+
+        在这个布局中，p 标签的作用是？
+        相当于一个 div 容器 、不是用来换行
+        那么 p标签 的作用：当控件只有一个选项的时候，直接使用控件作为class、容器即可
+        当控件有多个选项时，就需要用一个 p 标签 将所有的内容包起来，当做一个
+
+        display: table-cell 会有什么影响？
+
+        如果没有  div.tableRow label:first-child  伪类，就必须为左右2列的p标签加上补不同的class、id，然后才能对齐
+       -->
+
+            <div class="tableRow">
+                <label>Type：</label>
+                <!-- 这个 label 与下面的 label 导致css选择不准，需要区分 -->
+                <p>
+                    <input id="whole" type="radio" name="beantype" value="whole">
+                    <label for="whole">whole bean</label><br/>
+
+                    <!-- label的顺序根据需要，先写则在控件之前，后写，则在控件之后 -->
+
+                    <input id="ground" type="radio" checked name="beantype" value="ground">
+                    <label for="ground">ground</label><br/>
+                </p>
+            </div>
+
+            <div class="tableRow">
+                <label for="bags">Number of bags:</label>
+                <input id="bags" type="number" name="bags" min="1" max="10">
+            </div>
+
+            <div class="tableRow">
+                <label for="date">Must arrive by date:</label>
+                <input id="date" type="date" name="date">
+            </div>
+
+            <div class="tableRow">
+                <label>Extras: </label>
+                <p>
+                    <input id="giftwrap" type="checkbox" name="extras[]" value="giftwrap">
+                    <label for="giftwrap">Gift wrap</label><br/>
+
+                    <input id="catalog" type="checkbox" checked name="extras[]" value="catalog">
+                    <label for="catalog">Include catalog with order</label><br/>
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ship to</legend>
+            <div class="tableRow">
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" value="" placeholder="请在这里填写名字">
+            </div>
+<!-- value="" 这个是用来填写什么的？ -->
+            <div class="tableRow">
+                <label for="address">Address: </label>
+                <input id="address" type="text" name="address" value="" placeholder="请在这里填写地址">
+            </div>
+
+            <div class="tableRow">
+                <label for="city">City: </label>
+                <input id="city" type="text" name="city" value="" placeholder="请在这里填写所在城市">
+            </div>
+
+            <div class="tableRow">
+                <label for="state">State: </label>
+                <input id="state" type="text" name="state" value="" placeholder="请在填写这里省份">
+            </div>
+
+            <div class="tableRow">
+                <label for="zip">Zip: </label>
+                <input id="zip" type="text" name="zip" value="" placeholder="请在填写邮编">
+            </div>
+
+            <div class="tableRow">
+                <label for="phone">Phone: </label>
+                <input id="phone" type="tel" name="phone" value="" placeholder="请填写联系电话" required>
+            </div>
+
+            <div class="tableRow">
+                <label for="comments">Customer Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div class="tableRow">
+                <label></label>
+                <input type="submit" value="快上车">
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

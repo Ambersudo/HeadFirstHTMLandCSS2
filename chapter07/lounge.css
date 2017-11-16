@@ -1,0 +1,39 @@
+body {
+    font: sans-serif;
+}
+
+p {
+    color: #aa2424;
+    /* font-family: sans-serif; */
+}
+
+h1, h2 {
+    color: #4aca54;
+    /* font-family: sans-serif; */
+}
+
+h1 {
+    border-bottom: 1px solid black;/* 2个都写2个都有 */
+    text-decoration : underline red;
+}
+
+.greentea {
+    color: green;
+}
+
+.blueberry {
+    color: purple;
+}
+
+.raspberry {
+    color: blue;
+}
+
+/* 覆盖继承
+em {
+    font-family: serif;
+} */
+/*h2 {
+    color: #4aca54;
+    font-family: sans-serif;
+}*/
