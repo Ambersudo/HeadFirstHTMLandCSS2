@@ -20,6 +20,7 @@ body {
     border-spacing: 10px;
 }
 
+<<<<<<< HEAD
 #award {
     position: absolute;
     left: 365px;
@@ -27,6 +28,8 @@ body {
 
 }
 
+=======
+>>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
 #tableRow {
     display: table-row;
 }
@@ -61,6 +64,7 @@ body {
   /*margin:           0px 10px 10px 10px;*/
 }
 
+<<<<<<< HEAD
 #coupon {
     position: fixed;
     top: 350px;
@@ -71,6 +75,8 @@ body {
     border: none;
 }
 
+=======
+>>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
 #footer {
   background-color: #675c47;
   color:            #efe5d0;
