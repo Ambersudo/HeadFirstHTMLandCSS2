@@ -1,4 +1,4 @@
-body {
+body { 
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
@@ -6,44 +6,40 @@ body {
 }
 
 #header {
-  background-color: #675c47;
-  margin:           10px 10px 0px 10px;
-  height:           108px;
+	background-color: #675c47;
+	margin: 10px 10px 0px 10px;
+	height:           108px;
 }
 
-#headerSlogan {
-    float: right;
+#header img#headerSlogan {
+	float: right;
 }
 
+/* REMOVE FOR CHAP 12 */
 #award {
 	position: absolute;
 	top: 30px;
 	left: 365px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-#award {
-    position: absolute;
-    left: 365px;
-    top: 30px;
->>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
-
-.tableContainer {
-    display: table;
-    /*margin: 10px;*/
-    border-spacing: 10px;
+#coupon {
+    position: fixed;
+	top: 350px;
+	left: -90px;
 }
 
-<<<<<<< HEAD
-.tableRow {
-=======
-=======
->>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
+#coupon a, img {
+    border: none;
+}
+/*---*/
+
+#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
 #tableRow {
->>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
-    display: table-row;
+	display: table-row;
 }
 
 #drinks {
@@ -55,59 +51,36 @@ body {
 }
 
 #main {
-  display:          table-cell;
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 0px;
-  /*margin-right:     330px;*/
-  vertical-align:    top;
+  vertical-align: top;
 }
 
 #sidebar {
-  display:          table-cell;
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-<<<<<<< HEAD
-  margin:           10px 10px 0px 10px;
-  /*float:            right;*/
-  width:            280px;
-  vertical-align:    top;
+  vertical-align: top;
 }
 
-=======
-  /*margin:           0px 10px 10px 10px;*/
-}
-
-<<<<<<< HEAD
-#coupon {
-    position: fixed;
-    top: 350px;
-    left: -90px;
-}
-
-#coupon {
-    border: none;
-}
-
-=======
->>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
->>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
 #footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
+  margin: 0px 10px 10px 10px;
   font-size:        90%;
-  clear:            both;
 }
 
 h1 {
   font-size:        120%;
   color:            #954b4b;
 }
+
+h2 { font-size: 110%; }
 
 .slogan { color: #954b4b; }
 
@@ -126,3 +99,8 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
+
+
+
+
+
