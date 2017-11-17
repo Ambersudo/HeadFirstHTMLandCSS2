@@ -15,19 +15,20 @@ body {
     float: right;
 }
 
-#tableContainer {
+#award {
+	position: absolute;
+	top: 30px;
+	left: 365px;
+}
+
+
+.tableContainer {
     display: table;
+    /*margin: 10px;*/
     border-spacing: 10px;
 }
 
-#award {
-    position: absolute;
-    left: 365px;
-    top: 30px;
-
-}
-
-#tableRow {
+.tableRow {
     display: table-row;
 }
 
@@ -41,34 +42,23 @@ body {
 
 #main {
   display:          table-cell;
-  vertical-align:   top;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  /*margin:           0px 330px 10px 10px;*/
+  margin:           0px 10px 10px 0px;
+  /*margin-right:     330px;*/
+  vertical-align:    top;
 }
 
 #sidebar {
   display:          table-cell;
-  vertical-align:   top;
-  /*position:         absolute;// 这是绝对定位 与 表格布局冲突
-  top:              128px;
-  right:            0px;
-  width:            280px;*/
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  /*margin:           0px 10px 10px 10px;*/
-}
-
-#coupon {
-    position: fixed;
-    top: 350px;
-    left: -90px;
-}
-
-#coupon {
-    border: none;
+  margin:           10px 10px 0px 10px;
+  /*float:            right;*/
+  width:            280px;
+  vertical-align:    top;
 }
 
 #footer {
@@ -78,6 +68,7 @@ body {
   padding:          15px;
   margin:           0px 10px 10px 10px;
   font-size:        90%;
+  clear:            both;
 }
 
 h1 {
@@ -97,7 +88,6 @@ a:link {
   text-decoration:  none;
   border-bottom:    thin dotted #b76666;
 }
-
 a:visited {
   color:            #675c47;
   text-decoration:  none;
