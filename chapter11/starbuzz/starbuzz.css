@@ -21,6 +21,14 @@ body {
 	left: 365px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#award {
+    position: absolute;
+    left: 365px;
+    top: 30px;
+>>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
 
 .tableContainer {
     display: table;
@@ -28,7 +36,13 @@ body {
     border-spacing: 10px;
 }
 
+<<<<<<< HEAD
 .tableRow {
+=======
+=======
+>>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
+#tableRow {
+>>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
     display: table-row;
 }
 
@@ -55,12 +69,31 @@ body {
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
+<<<<<<< HEAD
   margin:           10px 10px 0px 10px;
   /*float:            right;*/
   width:            280px;
   vertical-align:    top;
 }
 
+=======
+  /*margin:           0px 10px 10px 10px;*/
+}
+
+<<<<<<< HEAD
+#coupon {
+    position: fixed;
+    top: 350px;
+    left: -90px;
+}
+
+#coupon {
+    border: none;
+}
+
+=======
+>>>>>>> c09b5a9cd9582fb83cae507222b8c0a5ce946df5
+>>>>>>> d3391e07d59410bbfefa40f297a9ece708b76501
 #footer {
   background-color: #675c47;
   color:            #efe5d0;
