@@ -13,9 +13,12 @@
         <img id="headerSlogan" src="images/headerSlogan.gif" alt="Providing all the caffeine you need to power your life.">
     </div>
 
+    <!-- <div id="idaward">  去除这个 div 直接相对于 body 进行位置设置-->
+    <!-- award 相对于html  不是相对于 body  -->
     <div id="award">
         <img src="images/award.gif" alt="Roaster of the Year award">
     </div>
+    <!-- </div> -->
 
     <div id="tableContainer">
         <div id="tableRow">
@@ -50,7 +53,8 @@
                 <p>
                     "A man, a plan, a coffee bean". Okay, that doesn't make a palindrome, but it resulted in a damn good cup of coffee. Starbuzz's CEO is that man, and you already know his plan: a Starbuzz on every corner.
                 </p>
-                <p>In only a few years he's executed that plan and today you can enjoy Starbuzz just about anywhere. And, of course, the big news this year is that Starbuzz teamed up with Head First readers to create Starbuzz's Web presence, which is growing rapidly and helping to meet the caffeine needs of a whole new set of customers.
+                <p>In only a few years he's executed that plan and today you can enjoy Starbuzz just about anywhere. And, of course, the big news this year is that Starbuzz teamed up with Head First readers to create Starbuzz's Web presence, which is growing
+                    rapidly and helping to meet the caffeine needs of a whole new set of customers.
                 </p>
                 <h1>STARBUZZ COFFEE BEVERAGES</h1>
                 <p>
@@ -91,8 +95,11 @@
 
     <div id="coupon">
         <a href="freecoffee.html" title="Click here to get your free coffee">
-			<img src="images/ticket.gif" alt="Starbuzz coupon ticket">
-		</a>
+            <img src="images/ticket.gif" alt="Starbuzz coupon ticket">
+        </a>
+        <div id="closecp">
+            <img class="closecp" src="images/close.png" alt="关闭">
+        </div>
     </div>
 
     <div id="footer">
@@ -100,6 +107,13 @@
         <br> All trademarks and registered trademarks appearing on this site are the property of their respective owners.
     </div>
 
+    <script>
+        var click = document.getElementById('closecp')
+        click.addEventListener('click', function() {
+            var coupon = document.getElementById('coupon')
+            coupon.classList.add('coupon-hide')
+        })
+    </script>
 </body>
 
 </html>
